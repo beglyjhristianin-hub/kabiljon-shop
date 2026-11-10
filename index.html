@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>kabiljon</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+        body { padding: 30px; display: flex; justify-content: center; background: #fff; }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .box {
+            background-color: #cbcf57;
+            border-radius: 16px;
+            padding: 25px;
+        }
+
+        header, footer { display: flex; justify-content: space-between; align-items: center; }
+        nav span { margin-left: 15px; color: #0044cc; cursor: pointer; }
+
+        main { display: flex; gap: 40px; margin: 20px 0; }
+        article { flex: 2; }
+        .col { display: flex; flex-direction: column; gap: 15px; }
+        .catalog-sidebar { flex: 1.2; }
+
+        p { margin-top: 6px; }
+
+        button {
+            padding: 2px 8px;
+            margin-left: 6px;
+            cursor: pointer;
+            border: 1px solid #000000;
+            background: #d8ae00;
+            border-radius: 3px;
+        }
+        button:active {
+            background: #9a9608;
+        }
+
+        /* Нижний блок корзины */
+        .cart-box {
+            background-color: #cbcf57;
+            border-radius: 16px;
+            padding: 20px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Основной блок витрины -->
+        <div class="box">
+            <header>
+                <h2>kabiljon</h2>
+                <nav><span>асортимент</span><span>0 нас</span><span>контакты</span></nav>
+            </header>
+
+            <main>
+                <article>
+                    <div class="col">
+                        <section>
+                            <h3>Товары</h3>
+                            <p>генеральские трусы — 1200 р. <button type="button">оформить</button></p>
+                            <p>хутухуди — 3200 р. <button type="button">оформить</button></p>
+                            <p>кепка с проепеллером — 1488 р. <button type="button">оформить</button></p>
+                            <p>носочки стонисланд — 400000000000000000000000000000 р. <button type="button">оформить</button></p>
+                        </section>
+                        <section>
+                            <h3>доставка</h3>
+                            <p>Курьером по городу</p>
+                        </section>
+                    </div>
+                </article>
+
+                <!-- Боковой блок ассортимента -->
+                <aside class="catalog-sidebar">
+                    <h3>асортимент</h3>
+                    <p>- футболка</p>
+                    <p>- трусы</p>
+                    <p>- худи</p>
+                    <p>- головные уборы</p>
+                    <p>- аксессуары</p>
+                </aside>
+            </main>
+
+            <footer>
+                <nav><span>&copy; Все права защищены</span></nav>
+            </footer>
+        </div>
+
+        <!-- Нижний блок корзины -->
+        <aside class="cart-box">
+            <div>
+                <h3>корзина</h3>
+                <p>генеральские трусы: 1200 р.</p>
+            </div>
+            <div style="text-align: right;">
+                <p>Итого: <b>1200 р.</b></p>
+                <button type="button" style="margin-top: 6px; padding: 6px 16px;">заказать</button>
+            </div>
+        </aside>
+    </div>
+
+</body>
+</html>
